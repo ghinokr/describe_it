@@ -113,9 +113,9 @@ else:
                 plt.plot(range(1, len(scores) + 1), scores, marker='o', linestyle='-', color='b')
                 plt.xticks(range(1, len(scores) + 1), labels=[str(i) for i in range(1, len(scores) + 1)])
                 plt.yticks([1, 2, 3], labels=['C', 'B', 'A'])
-                plt.xlabel('평가 차수 (1, 2, 3)')
-                plt.ylabel('평가 등급 (C, B, A)')
-                plt.title('학생의 평가 결과 변화')
+                plt.xlabel('Round (1, 2, 3)')
+                plt.ylabel('Grade (C, B, A)')
+                plt.title('Progression of Student's Performance')
                 plt.ylim(0, 3)  # Y축 범위를 0-3으로 설정 (1, 2, 3만 사용)
                 st.pyplot(plt)
         else:
