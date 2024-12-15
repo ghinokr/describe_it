@@ -115,7 +115,7 @@ else:
                 plt.yticks([1, 2, 3], labels=['C', 'B', 'A'])
                 plt.xlabel('Round (1, 2, 3)')
                 plt.ylabel('Grade (C, B, A)')
-                plt.title('Progression of Student's Performance')
+                plt.title('Progression of Student Performance')
                 plt.ylim(0, 3)  # Y축 범위를 0-3으로 설정 (1, 2, 3만 사용)
                 st.pyplot(plt)
         else:
