@@ -1,8 +1,4 @@
 streamlit
 openai
 matplotlib
-Image
-os
-time
-re
-json
+image
