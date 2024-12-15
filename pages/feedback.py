@@ -6,8 +6,16 @@ import openai
 import matplotlib
 import re
 
-# 한글 포트 설정
-matplotlib.rc('font', family='Malgun Gothic')
+## 한글 포트 설정
+#matplotlib.rc('font', family='Malgun Gothic')
+
+import matplotlib.font_manager as fm
+
+# 한글 폰트 경로 지정 (Malgun Gothic 예제)
+font_path = "./malgun.ttf"  # Windows 경로
+font_prop = fm.FontProperties(fname=font_path)
+
+plt.rc('font', family=font_prop.get_name())
 
 # JSON 파일 로드 함수
 def load_json_data():
